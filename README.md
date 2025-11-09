@@ -14,7 +14,7 @@
    - Watch the tutorial: [How to install custom Chrome extensions](https://www.youtube.com/watch?v=oswjtLwCUqg)
 
 2. **Encrypt your photos** using the Blobify program
-   - Download the latest release from the **Releases page**
+   - Download the latest release from the **Releases page** https://github.com/AlessandroBonomo28/Blobify/releases/tag/1.0.0
 
 3. **Upload encrypted photos** to Google Photos
    - ⚠️ **Important**: Select **NO COMPRESSION** when uploading
