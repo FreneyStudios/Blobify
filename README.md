@@ -1,8 +1,10 @@
-# Blobify 🔒
+# Blobify 🗿
 
 **Protect your privacy from cloud providers.** Encrypt and decrypt your photos locally in PNG format!
 
 > ⚠️ **Disclaimer**: This is an experimental project for educational and research purposes. The author assumes no responsibility for misuse or damage resulting from the use of this project. Use responsibly and in compliance with applicable laws.
+
+<img width="678" height="676" alt="icon" src="https://github.com/user-attachments/assets/ec99f905-c7c9-4c52-96a8-4ccdb53ebef6" />
 
 ---
 
