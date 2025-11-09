@@ -68,10 +68,10 @@ python decrypt.py
 ```bash
 cd python-app
 
-pyinstaller --onefile --windowed ^
-    --add-data "icon.png;." ^
-    --add-data "icon-name.png;." ^
-    --icon=icon.png ^
+pyinstaller --onefile --windowed \
+    --add-data "icon.png;." \
+    --add-data "icon-name.png;." \
+    --icon=icon.png \
     blobify.py
 ```
 
