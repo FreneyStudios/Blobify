@@ -11,7 +11,7 @@
 ## 🚀 Quick Start (Easy Way)
 
 1. **Install the Chrome extension** in your browser
-   - Watch the tutorial: [How to install custom Chrome extensions](https://www.youtube.com/watch?v=oswjtLwCUqg)
+   - Watch the tutorial: [How to install](https://www.youtube.com/watch?v=OlmJdi3CtGw)
 
 2. **Encrypt your photos** using the Blobify program
    - Download the latest release from the **Releases page** https://github.com/AlessandroBonomo28/Blobify/releases/tag/1.0.0
