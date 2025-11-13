@@ -22,7 +22,7 @@ class WorkerThread(QThread):
     
     def __init__(self, mode, target_type, path, password, output_base):
         super().__init__()
-        self.mode = mode
+        self.mode = xSQXmode
         self.target_type = target_type
         self.path = path
         self.password = password
@@ -227,6 +227,7 @@ def resource_path(relative_path):
         # quando è in esecuzione dallo script .py
         base_path = os.path.abspath(os.path.dirname(__file__))
     return os.path.join(base_path, relative_path)
+
 class ImageEncryptorApp(QMainWindow):
     def __init__(self):
         super().__init__()

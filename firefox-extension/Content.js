@@ -77,17 +77,19 @@ class CachePool {
 }
 
 const decryptCache = new CachePool(15);
-const elementData = new WeakMap();
+const elementData  = new WeakMap();
 
 
 // ========== FUNZIONI CRITTOGRAFICHE ==========
 
 async function getPassword() {
-  return new Promise((resolve) => {
-    chrome.storage.local.get("decryptPassword", (data) => {
-      resolve(data.decryptPassword || "123"); // default fallback
-    });
-  });
+  try {
+    const data = await browser.storage.local.get("decryptPassword");
+    return data.decryptPassword || "123"; // default fallback
+  } catch (err) {
+    console.error("Errore recupero password:", err);
+    return "123";
+  }
 }
 async function decryptData(encryptedData, password) {
   const salt = encryptedData.slice(0, 16);

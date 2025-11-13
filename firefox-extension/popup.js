@@ -3,12 +3,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const saveButton = document.getElementById("save");
   const status = document.getElementById("status");
 
-  // Recupera password salvata
-  chrome.storage.local.get("decryptPassword", (data) => {
-    if (data.decryptPassword) {
-      passwordInput.value = data.decryptPassword;
+  // Recupera password salvata (Firefox con API browser.*)
+  async function loadPassword() {
+    try {
+      const data = await browser.storage.local.get("decryptPassword");
+      if (data.decryptPassword) {
+        passwordInput.value = data.decryptPassword;
+      }
+    } catch (err) {
+      console.error("Errore nel recupero password:", err);
     }
-  });
+  }
+  passwordInput.value = loadPassword();
 
   // Salva password
   saveButton.addEventListener("click", () => {
